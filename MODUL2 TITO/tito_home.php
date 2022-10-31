@@ -53,7 +53,7 @@
                 <img src="stra.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Hyundai STARGAZER</h5>
-                  <p class="card-text"> IDR 650,000 / Hari </p>
+                  <p class=> IDR 650,000 / Hari </p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-center text-primary"><b> 7 kursi</b></li>
@@ -70,7 +70,7 @@
             
             <div class="card" style="width: 18rem;">
                 <img src="hrv.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class=>
                   <h5 class="card-title">HRV RS Turbo</h5>
                   <p class="card-text"> IDR 1,250,000 / Hari </p>
                 </div>

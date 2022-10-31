@@ -71,7 +71,7 @@
           </b>
       </th>
 
-      <th scope="col">
+      <th >
           <b>
                 Service(s)
           </b>
