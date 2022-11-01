@@ -13,7 +13,7 @@
 <ul class="nav justify-content-center bg-black">
 
 <li class="nav-item">
-  <a class="nav-link te text-muted" href="#">Home</a>
+  <a class="nav-link text-muted" href="#">Home</a>
 </li>
 <li class="nav-item">
   <a class="nav-link text-muted" href="#">Booking</a>
@@ -71,7 +71,7 @@
           </b>
       </th>
 
-      <th >
+      <th scope="col">
           <b>
                 Service(s)
           </b>

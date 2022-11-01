@@ -48,7 +48,7 @@
                 </div>
                 <!-- Car Type -->
                 <label for="exampleFormControlInput1" class="form-label">Car Type</label>
-                <!-- <select class="form-select" style="width: 90%;" aria-label="Default select example"> -->
+                <select class="form-select" style="width: 90%;" aria-label="Default select example">
                   <option selected>Wuling AIR EV</option>
                   <option value="1">Hyundai STARGAZER</option>
                   <option value="2">HRV RS Turbo</option>
@@ -56,7 +56,7 @@
                 <!-- Phone Number -->
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                  <!-- <input type="email" class="form-control" style="width: 90%" id="exampleFormControlInput1" placeholder=""> -->
+                <input type="email" class="form-control" style="width: 90%" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <!-- Add Service -->
                 <label for="exampleFormControlInput1" class="form-label">Add Service</label>

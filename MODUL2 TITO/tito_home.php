@@ -70,7 +70,7 @@
             
             <div class="card" style="width: 18rem;">
                 <img src="hrv.jpeg" class="card-img-top" alt="...">
-                <div class=>
+                <div class="card-body">
                   <h5 class="card-title">HRV RS Turbo</h5>
                   <p class="card-text"> IDR 1,250,000 / Hari </p>
                 </div>
