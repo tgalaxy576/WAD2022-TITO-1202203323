@@ -37,7 +37,7 @@
                 <h1>Selamat Datang di <br> Show Room Tito</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <div class="">
-                  <a class="btn btn-primary" href="Add-Tito.php" role="button">MyCar</a>
+                  <a class="btn btn-primary" href="Add-Tito.php" role=".">MyCar</a>
                 </div><br><br>
                 <img style="width: 100px;"src="../image/logo-ead.png" alt="">
                 Tito_1202203323

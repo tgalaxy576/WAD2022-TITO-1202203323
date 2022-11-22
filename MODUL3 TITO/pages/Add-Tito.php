@@ -36,7 +36,7 @@
             <form action="../config/insert.php" method="post">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"> <b>Nama Mobil</b></label>
-              <input type="namaMobil" class="form-control" placeholder="ex: Tesla model S" name="namamobil">
+              <input type="namaMobil" class="form-control" ="ex: Tesla model S" name="namamobil">
             </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"><b>Nama Pemilik</b></label>
