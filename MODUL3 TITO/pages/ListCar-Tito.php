@@ -21,8 +21,8 @@
 
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active " aria-current="page" href="#">Home</a>
-              <a class="nav-link " href="#">MyCar</a>
+              <a class="nav-link active " aria-current="page" href="Home-Tito.php">Home</a>
+              <a class="nav-link " href="ListCar-Tito.php">MyCar</a>
             </div>
           </div>
         </div>
@@ -37,12 +37,36 @@
 
       <?php
       while($fetch = mysqli_fetch_array($query)){
-      echo $fetch["nama_mobil"];
-      echo "<br>";
-      echo $fetch["merk_mobil"];
+      
 
-      }
       ?>
+     <div class="container">
+        <div class="row align-items-start">
+          <div class="col">
+            
+            <div class="card" style="width: 18rem;">
+                <img src="../image/<?php echo $fetch["foto_mobil"];?>" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><?php echo $fetch["nama_mobil"];?></h5>
+                </div>
 
+                <?php echo $fetch["deskripsi"]; ?>
+
+                <div class="card-footer text-center">
+                <a class="btn btn-primary" href="" role="button">Edit</a>
+                <a class="btn btn-danger"  href="../config/delete.php?id_mobil=<?php echo $fetch['id_mobil']; ?>" role="button" >Delete</a>
+                </div>
+
+            </div>
+         </div>
+      </div>
+        <br>
+      
+
+     <?php
+     }
+     
+     
+     ?>
   </body>
 </html>

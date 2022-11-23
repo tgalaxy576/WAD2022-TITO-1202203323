@@ -1,30 +1,23 @@
 <?php
-include ('../config/connect.php');
+include ('connect.php');
 if (isset($_POST['Selesai'])){
-    $car_name = $_POST['namamobil'];
-    $owner_name = $_POST['namapemilik'];
-    $brand = $_POST['merk'];
-    $purchase_date = $_POST['tanggalbeli'];
-    $description = $_POST['deskripsi'];
-    $payment_status = $_POST['Bayar'];
+    $poto="../image/";
+    $namapoto= $_FILES['foto']['name'];
 
-    // if (!empty($_FILES["Foto"]["tmp_name"])) {
-    //     $fileType = pathinfo($_FILEs['Foto']['tmp_name'], PATHINFO_EXTENSION);
-    //     $target_dir = "../Images/";
-    //     $filename = $car_name . "." . $fileType;
-    //     $target_file = $target_dir . $filename;
-        
-    //     if ($fileType != "") {
-            
-    //         move_uploaded_file($_FILES["Image"]["tmp_name"], $target_file); 
-    // }
-$insert = "INSERT INTO showroom_tito_table (id_mobil,nama_mobil,pemilik_mobil,merk_mobil,tanggal_beli,deskripsi,status_pembayaran)
-            VALUES(rand(),'$car_name','$owner_name','$brand','$purchase_date','$description','$payment_status')";
+    mysqli_query($connect, "INSERT INTO showroom_tito_table set
+    nama_mobil = '$_POST[namamobil]',
+    pemilik_mobil = '$_POST[namapemilik]',
+    merk_mobil = '$_POST[merk]',
+    tanggal_beli = '$_POST[tanggalbeli]',
+    deskripsi = '$_POST[deskripsi]',
+    status_pembayaran = '$_POST[Bayar]',
+    foto_mobil = '$namapoto'");
+
+    move_uploaded_file($_FILES['foto']['tmp_name'],$poto.$namapoto);
 
 
-
-    mysqli_query($connect, $insert); 
+    // echo "<URL = '../pages/ListCar-Tito.php'>";
+    echo "berhasil";
 } 
 
-header('location:../pages/Add-Tito.php')
 ?>

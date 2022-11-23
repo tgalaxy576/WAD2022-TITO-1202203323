@@ -21,12 +21,12 @@
 
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active " aria-current="page" href="#">Home</a>
-              <a class="nav-link " href="#">MyCar</a>
+              <a class="nav-link active " aria-current="page" href="Home-Tito.php">Home</a>
+              <a class="nav-link " href="ListCar-Tito.php">MyCar</a>
             </div>
           </div>
         </div>
-    </nav><br><br><br>
+      </nav><br><br><br>
 
     
  

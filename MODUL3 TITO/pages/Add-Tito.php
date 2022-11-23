@@ -21,8 +21,8 @@
 
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active " aria-current="page" href="#">Home</a>
-              <a class="nav-link " href="#">MyCar</a>
+              <a class="nav-link active " aria-current="page" href="Home-Tito.php">Home</a>
+              <a class="nav-link " href="ListCar-Tito.php">MyCar</a>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@
           <div class="col-9">
 
             <h3>Tambah Mobil</h3><p>Tambahkan mobil baru anda ke dalam show room</p><br><br>
-            <form action="../config/insert.php" method="post">
+            <form action="../config/insert.php" method="post" enctype="multipart/form-data" >
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"> <b>Nama Mobil</b></label>
               <input type="namaMobil" class="form-control" placeholder="ex: Tesla model S" name="namamobil">
@@ -48,22 +48,22 @@
             </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"><b>Tanggal Beli</b></label>
-              <input type="text" class="form-control" placeholder="ex: 31/12/2022" name="tanggalbeli">
+              <input type="date" class="form-control" placeholder="ex: 31/12/2022" name="tanggalbeli">
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label"><b>Deskripsi</b></label>
               <textarea class="form-control" rows="3" name="deskripsi"></textarea>
             </div>
             
-            <div><label for="Image" class="form-label">Image</label>
-              <input class="form-control" type="file" id="Image" name="Image" accept="image/*"><br></div>
+            <div><label for="foto" class="form-label">Foto Mobil</label>
+              <input class="form-control" type="file" id="foto" name="foto"><br></div>
               <label for="form-label">Status Pembayaran</label> <br>
             <div class="form-check form-check-inline">
               <label class="form-check-label" for="Bayar"> Lunas </label>
               <input class="form-check-input" type="radio" name="Bayar" id="Bayar" value="Lunas">
             </div>
            <div class="form-check form-check-inline">
-              <label class="form-check-label" for="Bayar"> Belum Lunas </label>
+             <label class="form-check-label" for="Bayar"> Belum Lunas </label>
              <input class="form-check-input" type="radio" name="Bayar" id="Bayar" value="Belum Lunas"> <br>
            </div><br><br>
 
