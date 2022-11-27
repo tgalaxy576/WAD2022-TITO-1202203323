@@ -18,5 +18,6 @@ if (file_exists("../image/$poto")){
 }
 
 echo "berhasil dihapus";
+echo "<meta http-equiv=refresh content=2;URL='../pages/ListCar-Tito.php'>";
 
 ?>

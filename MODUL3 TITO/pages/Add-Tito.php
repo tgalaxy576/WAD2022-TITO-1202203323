@@ -23,6 +23,7 @@
             <div class="navbar-nav">
               <a class="nav-link active " aria-current="page" href="Home-Tito.php">Home</a>
               <a class="nav-link " href="ListCar-Tito.php">MyCar</a>
+              <a href="Add-Tito.php" style="width: 100px;position:relative;left:1400px;" class="btn btn-light fw-bold">Add Car</a>
             </div>
           </div>
         </div>

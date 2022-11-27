@@ -18,6 +18,7 @@ if (isset($_POST['Selesai'])){
 
     // echo "<URL = '../pages/ListCar-Tito.php'>";
     echo "berhasil";
+    echo "<meta http-equiv=refresh content=2;URL='../pages/ListCar-Tito.php'>";
 } 
 
 ?>

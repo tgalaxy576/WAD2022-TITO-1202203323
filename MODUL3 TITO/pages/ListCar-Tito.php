@@ -23,50 +23,48 @@
             <div class="navbar-nav">
               <a class="nav-link active " aria-current="page" href="Home-Tito.php">Home</a>
               <a class="nav-link " href="ListCar-Tito.php">MyCar</a>
+              <a href="Add-Tito.php" style="width: 100px;position:relative;left:1400px;" class="btn btn-light fw-bold">Add Car</a>
             </div>
           </div>
         </div>
       </nav>
 
-      <?php 
-
-      include('../config/connect.php');
-
-      $query = mysqli_query($connect, "SELECT * FROM showroom_tito_table");
-      ?>
-
+      <div class="container mt-5 px-5">
+    <h1>My Showroom</h1>
+    <p>List Showroom TITO - 1202203323</p>
+    <div class="row">
       <?php
-      while($fetch = mysqli_fetch_array($query)){
-      
-
+        include '../config/connect.php';
+        $query = "SELECT * FROM showroom_tito_table ORDER BY id_mobil ASC";
+        $show = mysqli_query($connect,$query);
+        while ($data = mysqli_fetch_array($show)) {
       ?>
-     <div class="container">
-        <div class="row align-items-start">
           <div class="col">
-            
-            <div class="card" style="width: 18rem;">
-                <img src="../image/<?php echo $fetch["foto_mobil"];?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><?php echo $fetch["nama_mobil"];?></h5>
+            <div class="card mt-2" style="width: 18rem;margin-bottom:25px;">
+              <img src="../image/<?php echo $data['foto_mobil'];?>" class="card-img-top"  style="min-height:200px;">
+              <div class="card-body"  style="max-height:200px;">
+                <h5 class="card-title"><?php echo $data['nama_mobil'];?></h5>
+                <p class="card-text"><?php echo $data['deskripsi'];?></p>
+                <div class="container px-5">
+                  <a href="../pages/Detail-Tito.php?id_mobil=<?php echo $data['id_mobil'];?>" class="btn btn-primary">Detail</a>
+                  <a href="../config/delete.php?id_mobil=<?php echo $data['id_mobil'];?>" class="btn btn-danger">Delete</a>
                 </div>
-
-                <?php echo $fetch["deskripsi"]; ?>
-
-                <div class="card-footer text-center">
-                <a class="btn btn-primary" href="" role="button">Edit</a>
-                <a class="btn btn-danger"  href="../config/delete.php?id_mobil=<?php echo $fetch['id_mobil']; ?>" role="button" >Delete</a>
-                </div>
-
+              </div>
             </div>
-         </div>
-      </div>
-        <br>
-      
+          </div>
+        <?php  } ?>
+    </div>
+    <?php
+  
+    $tabel = mysqli_query($connect,"SELECT * FROM showroom_tito_table");
+    $banyakMobil = mysqli_num_rows($tabel);
 
-     <?php
-     }
-     
-     
-     ?>
+    ?>
+    <div class="container mt-5">
+        <p class="fw-bold opacity-50 fixed-bottom px-3">Jumlah Mobil : <?php echo "$banyakMobil" ?></p>
+    </div>
+</div>
+
+
   </body>
 </html>

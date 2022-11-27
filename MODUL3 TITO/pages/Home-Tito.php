@@ -23,6 +23,7 @@
             <div class="navbar-nav">
               <a class="nav-link active " aria-current="page" href="Home-Tito.php">Home</a>
               <a class="nav-link " href="ListCar-Tito.php">MyCar</a>
+              <a href="Add-Tito.php" style="width: 100px;position:relative;left:1400px;" class="btn btn-light fw-bold">Add Car</a>
             </div>
           </div>
         </div>
@@ -37,7 +38,7 @@
                 <h1>Selamat Datang di <br> Show Room Tito</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <div class="">
-                  <a class="btn btn-primary" href="Add-Tito.php" role="button">MyCar</a>
+                  <a class="btn btn-primary" href="ListCar-Tito.php" role="button">MyCar</a>
                 </div><br><br>
                 <img style="width: 100px;"src="../image/logo-ead.png" alt="">
                 Tito_1202203323
