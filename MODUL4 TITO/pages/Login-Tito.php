@@ -2,7 +2,7 @@
 
   include('../config/connect.php');
 
-  if(isset($_POST['home'])) {
+  if(isset($_POST['login'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
