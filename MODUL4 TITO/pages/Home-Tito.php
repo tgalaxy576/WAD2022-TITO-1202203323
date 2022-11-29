@@ -35,7 +35,7 @@
         <div class="container-fluid text-center">
           <div class="row justify-content-center">
               <div class="col-6 text-sm-start ">
-                <br><br><br><br><br><br>
+                
                 <h1>Selamat Datang di <br> Show Room Tito</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <div class="">

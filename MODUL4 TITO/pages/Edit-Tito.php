@@ -37,7 +37,7 @@
     $id_mobil = $_GET['id_mobil'];
     $sql = "SELECT * FROM showroom_tito_table where id_mobil ='$id_mobil'";
     $tampilData = mysqli_query($connect,$sql);
-    while ($data = mysqli_fetch_array($tampilData)) {
+    while ($data = mysqli_kill($tampilData)) {
 ?>
  
 <div class="container mt-5 px-3" style="margin-bottom:100px">
