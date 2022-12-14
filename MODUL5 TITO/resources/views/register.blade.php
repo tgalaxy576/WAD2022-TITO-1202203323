@@ -18,6 +18,7 @@
         
     <!-- Awal form  -->
         <form action="{{ route('register.store') }}" method= "post" class="mt-5" style="margin-right:250px">
+        @csrf
         <br><br><br><br><br><br>
             <h3>Register</h3>
                <div class="mb-3">
@@ -47,9 +48,6 @@
 <!-- Akhir form  -->
     </div>
   </div>
-
-
-
 
   </body>
 </html>
